@@ -1,0 +1,21 @@
+/* custom-tab-bar/index.wxss */
+@import "/colorui/main.wxss";
+@import "/colorui/icon.wxss";
+@import "/colorui/animation.wxss";
+
+
+.text1{
+  color: gray;
+}
+.tabbar{
+  background:#f0f0f4;
+  border-radius: 150rpx;
+  color:rgba(1, 22, 53, 0.85);
+}
+.active{
+  color: #39b54a;
+  border-radius: 150rpx;
+}
+.default{
+  color: gray;
+}

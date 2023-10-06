@@ -1,0 +1,34 @@
+<!--pages/register/register.wxml-->
+<navigation-bar back="{{true}}" color="black" background="#fff"></navigation-bar>
+
+<view class="container">
+  <!-- <view class="p-base">
+    <view>
+      <text class="title">登录/注册</text>
+    </view> -->
+
+    <!--账号-->
+    <!-- <view class="mt-lg">
+      <text class="desc">用户名/账号</text>
+      <input
+        placeholder="请输入用户名/账号"
+        class="input {{focus[0] ? 'focus' : ''}}"
+        bindfocus="onFocus"
+        bindblur="onBlur"
+        bindinput="onInput"
+        data-index="0"
+      />
+    </view>
+
+  </view> -->
+<view>
+  <van-button round type="info" is-link bind:click="showPopup">圆形按钮</van-button>
+  <van-popup
+  show="{{ show }}"
+  round
+  position="top"
+  custom-style="height: 50%"
+  bind:close="onClose"
+/>
+</view>
+</view>

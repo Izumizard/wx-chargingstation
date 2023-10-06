@@ -1,0 +1,131 @@
+/* pages/login/login.wxss */
+page {
+  height: 100vh;
+
+
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.title {
+  font-weight: 650;
+  font-size: 55rpx;
+  line-height: 80rpx;
+  padding: 20rpx;
+}
+
+.desc {
+  color: #cccccc;
+  font-size: 650;
+}
+
+
+.input {
+  margin-top: 40rpx;
+  height: 100rpx;
+  border: 2px solid rgba(228, 228, 228, 1);
+  border-radius: 16rpx;
+  position: relative;
+  padding-left: 15rpx;
+}
+
+.input.focus {
+  border-color: rgb(46, 78, 126);
+}
+
+
+.p-base {
+  padding: 30rpx;
+}
+
+.mt-lg {
+  padding: 25rpx;
+  margin-top: 20rpx;
+}
+
+.mt-base {
+  padding: 25rpx;
+  margin-top: 0rpx;
+
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.frgot-paswd {
+  position: absolute;
+  top: 35rpx;
+  right: 15rpx;
+  font-size: 22rpx;
+  font-weight: bold;
+  color: rgb(46, 78, 126);
+}
+
+.btn {
+  background-color: rgb(46, 78, 126);
+  color: white;
+  margin-top: 30rpx;
+  border-radius: 16rpx;
+}
+
+.disabled {
+  background-color: rgb(240, 240, 244);
+  color: white;
+  margin-top: 30rpx;
+  border-radius: 16rpx;
+}
+
+.button-empty {
+  background-color: rgb(240, 240, 244);
+  color: white;
+  margin-top: 30rpx;
+  border-radius: 16rpx;
+}
+
+.button-filled {
+  background-color: rgb(46, 78, 126);
+  color: white;
+  margin-top: 30rpx;
+  border-radius: 16rpx;
+}
+
+.text-center {
+  text-align: center;
+
+}
+
+.my-sn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  color: rgb(46, 78, 126);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.my-quickLogin {
+  margin-left: 20rpx;
+}
+
+.text-grey {
+  text-align: center;
+  color: #cccccc;
+}
+
+.text-base {
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}

@@ -1,0 +1,155 @@
+.container{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color:rgba(248, 248, 248, 0.6);
+}
+.header{  
+  margin: auto;
+  width: 100%;
+  height: 180px;
+  border-radius: 20px;
+  background-color: orangered;
+  overflow: hidden;
+  box-sizing:border-box;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.header image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.user-avatar{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.loginDesc{
+  margin-left: 15px;
+  color: rgba(1, 22, 53, 0.89);
+}
+.center{
+  margin: auto;
+  margin-top: 15rpx;
+  width: 98%;
+  height: 100px;
+  color:rgba(0, 0, 0, 1) ;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, .1);
+}
+.middle {
+  padding: 10px;
+}
+
+.my-wallet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mybalance {
+  display: flex;
+  align-items: center;
+}
+.mybalance span{
+  margin-left: 20rpx;
+}
+.chargehistory{
+  display: flex;
+  align-items: center;
+  color:rgba(128, 128, 128, 0.9);
+}
+.chargehistory span{
+  margin-right: 20rpx;
+}
+.balance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance text {
+  margin-top: 10rpx;
+  font-size: 36rpx;
+  margin-bottom: 10rpx;
+}
+
+.balance-title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+
+.notice{
+  margin: auto;
+  margin-top: 15rpx;
+  width: 98%;
+  height: 100px;
+  color:rgba(0, 0, 0, 1) ;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, .1);
+}
+.bottom{
+  margin: auto;
+  padding: 20rpx 10rpx;
+  margin-top: 15rpx;
+  width: 98%;
+  height: 360px;
+  color:rgba(0, 0, 0, 1) ;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, .1);
+}
+.van-popup{
+  width: 90%; height: 200px; border-radius: 20rpx; text-align: center; display: flex; flex-direction: column; justify-content: space-between;
+}
+.left{
+  width: 90%;
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(59, 59, 59);
+}
+.left span{
+  margin-left:10px;
+}
+.right {
+  margin-left: auto;
+  margin-right: 10rpx;
+  color: rgb(148, 147, 147);
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 10rpx;
+  font-size: 30rpx;
+  font-weight: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.row::after {
+  border: none;
+}
+.van-bt{
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+.icon-mt{
+  display: flex;
+  align-items: center;
+}
+.icon-mt span{
+  margin-left: 10rpx;
+}

@@ -1,0 +1,15 @@
+<view class="cu-bar tabbar shadow">
+    <view class="action {{selected === 0 ? 'active' : 'default'}}" data-index="0" bindtap="switchTab">
+      <view class="cuIcon-home"></view>
+        首页
+    </view>
+    <view class="action text-gray add-action">
+      <button bindtap="toggle" data-class="fade" role="button" class="cu-btn cuIcon-scan bg-green animation margin-sm basis-sm shadow"></button>
+      <text class="text1">扫一扫</text>
+    </view>
+
+    <view class="action {{selected === 1 ? 'active' : 'default'}}" data-index="1" bindtap="switchTab">
+      <view class="cuIcon-my"></view>
+      我的
+    </view>
+</view>

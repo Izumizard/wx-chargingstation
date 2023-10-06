@@ -1,0 +1,45 @@
+<!--pages/helpPage/helpPage.wxml-->
+<view class="container">
+<view style="height:85px;padding-top:20px;" class="cu-bar fixed bg-gradual-blue">
+  <view bindtap="BackPage" class="action">
+    <text class="cuIcon-back"></text>
+    <view>返回</view>
+  </view>
+</view>
+<view class="middle">
+<view class="collapse-van">
+  <van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+    <van-collapse-item title="充电常见问题" name="1">
+    <view class="span-mt">
+      <span>1.充电开启失败，提示充电无效</span>
+    <span>答：该情况情况建议您拔枪后间隔30s以上重新插枪再次开启或联系我们</span>
+    <span>2.提示充电桩与车未连接</span>
+    <span>答：该情况是充电枪没有连接好</span>
+    <span>3.提示有未结算订单不能充电</span>
+    <span>答：该情况是结算有延迟，一般等几分钟就会结算，结算完成后可继续充电；如果还未结算，请及时反馈我们</span>
+    <span>4.充电开启后跳枪或自动结束</span>
+    <span> 答：遇到自动跳枪或自动结束的情况，如果重新插枪后依然出现，建议您更换其他桩充电</span>
+    <span>5.冬天充电</span>
+    <span> 答：冬季温度低，车辆电池的活性差，充电会比较慢，建议您先增加电池温度后充电</span>
+    <span> 6.开启充电后，一直都没有电量数据 </span>
+    <span>答：开启充电后，建议停留2分钟观察充电状态页是否显示数据再离开，如果充电状态页超过10分钟后仍无电量相关数据，很可能充电桩出现异常，建议您结束充电更换其他桩充电</span>
+    <span>7.充电结束枪被锁住</span>
+    <span>答：该种情况建议您联系桩运营商或车品牌服务商指导处理</span>
+    </view>
+
+    </van-collapse-item>
+    <van-collapse-item title="充电小程序充电操作说明" name="2">
+      <view class="span-mt">
+      <span>1.车辆熄火，确保充电枪已连接。点击底部的“扫码”按钮，进入充电页面，扫描充电桩上的二维码开启充电。</span>
+      <span>2.进入充电页面。充电完成后，点击结束充电。</span>
+      <span>3.充电结束结算完成，手动拔枪离开。</span>
+      </view>
+    </van-collapse-item>
+    <van-collapse-item title="扣款规则" name="3">
+
+      <span>用户需要充值才能使用充电功能</span>
+    </van-collapse-item>
+  </van-collapse>
+</view>
+</view>
+</view>

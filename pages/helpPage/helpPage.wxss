@@ -1,0 +1,27 @@
+/* pages/helpPage/helpPage.wxss */
+.container{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color:rgba(248, 248, 248, 0.6);
+}
+.middle{
+  margin: auto;
+  padding: 0;
+  margin-top: 95px;
+  width: 98%;
+  color:rgba(0, 0, 0, 1) ;
+  border-radius: 20px;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, .1);
+}
+.collapse-van{
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+.span-mt {
+  display: flex;
+  flex-direction: column;
+}

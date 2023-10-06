@@ -1,0 +1,83 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+
+  <!--轮播图-->
+  <view class="swiper-mt">
+    <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{swiperList}}" >
+    <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+  </swiper-item>
+</swiper>
+</view>
+
+<!--NoticeBar 通知栏-->
+<view class="box">
+
+  <van-notice-bar
+  scrollable
+  left-icon="volume-o"
+  color="#011635"
+  background="#f0f0f4"
+  text="本系统仅供内部测试使用，不做商业用途。"
+  >
+<view class="content-wrapper">
+        <view class="content">{{ noticeBarText }}</view>
+      </view>
+    </van-notice-bar>
+  </view>
+
+<!-- 回到顶部 -->
+  <view class="fix_btn" hidden='{{no_scroll}}' bindtap="goTop">
+    <van-icon name="back-top" 
+    size="50rpx" 
+    class="icon" 
+    custom-class="van-icon-back"/>
+</view>
+
+
+<view class="tabs-mt">
+  <van-tabs
+  swipeable="true"
+  animated="true"
+  color="#011635"
+  title-active-color="#FF2D51"
+  titlt-inactive-color="grey"
+  line-width="40px"
+  line-height="2px">
+  <van-tab title="标签 1">
+    <map style="height:1500rpx;width:100%;" scale="16"
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    markers="{{markers}}"
+    >
+    </map>
+
+  </van-tab>
+  <van-tab title="标签 2">
+      <van-card
+              v-for="(item,index) in currentData[0].orders"
+              :key="index"
+              title-class="product-name"
+              price-class="product-price"
+              num-class="product-num"
+              custom-class="product-custom"
+              :num="item.number"
+              :price="item.price"
+              :title="item.name"
+              thumb-mode='aspectFill'
+              :thumb="item.url"  
+            >
+              <view slot="footer">
+                <image class="wait" :src="item.statues"></image>
+              </view>
+
+            </van-card>
+
+</van-tab>
+  
+
+</van-tabs>
+</view>
+  </view>
+</scroll-view>

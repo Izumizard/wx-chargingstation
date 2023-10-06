@@ -1,0 +1,39 @@
+<!--pages/login/login.wxml-->
+<navigation-bar back="{{true}}" color="black" background="#fff"></navigation-bar>
+<view class="container">
+  <view class="p-base">
+    <view>
+      <text class="title">登录/注册</text>
+    </view>
+
+    <!--账 号 -->
+    <view class="mt-lg">
+      <text class="desc">用户名/账号</text>
+      <input placeholder="请输入用户名/账号" class="input {{focus[0] ? 'focus' : ''}}" bindfocus="onFocus" bindblur="onBlur" bindinput="onAccountInput" data-index="0" />
+    </view>
+
+    <!--密码/忘记密码-->
+    <view class="mt-base">
+      <text class="desc">密码</text>
+      <view class="input-wrapper">
+        <input type="{{inputType}}" placeholder="请输入密码" class="input {{focus[1] ? 'focus' : ''}}" bindfocus="onFocus" bindblur="onBlur" bindinput="onPasswordInput" data-index="1" />
+
+        <text class="frgot-paswd">忘记密码？</text>
+      </view>
+    </view>
+
+    <button class="btn mt-lg {{isButtonDisabled ? 'disabled' : ''}}" style="width: 93.6%;" bindtap="onSubmit">登录</button>
+
+    <view class="text-sm text-center">
+    <view class="my-sn my-btn">
+      <view class="my-sn my-register" bind:tap="myRegister">立即注册</view>
+      <view class="my-sn my-quickLogin" bind:tap="quickLogin">快速登录</view>
+    </view>
+      <view class="text-grey">
+
+        登录即同意<text class="text-base">《用户协议》</text>及<text class="text-base">《隐私政策》</text>
+      </view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,38 @@
+<!--pages/mySetting/mySetting.wxml-->
+<view class="container">
+  <view style="height:85px;padding-top:20px;" class="cu-bar bg-gradual-blue fixed">
+    <view bindtap="BackPage" class="action">
+      <text class="cuIcon-back"></text>
+      <view>返回</view>
+    </view>
+  </view>
+<view class="middle">
+  <button class="row" style="width: 100%;" bindtap="infoClick">
+    <view class="left">
+      <span>个人信息</span>
+      <van-icon class="right" name="arrow" /> 
+    </view>
+    </button>
+    <button class="row" style="width: 100%;" bindtap="changePwdClick">
+    <view class="left">
+      <span>修改密码</span>
+      <van-icon class="right" name="arrow" /> 
+    </view>
+    </button>
+    <button class="row" style="width: 100%;" bindtap="helpClick">
+    <view class="left">
+      <span>帮助与反馈</span>
+      <van-icon class="right" name="arrow" /> 
+    </view>
+    </button>
+    <button class="row" style="width: 100%;" bindtap="aboutClick">
+    <view class="left">
+      <span>关于我们</span>
+      <van-icon class="right" name="arrow" /> 
+    </view>
+    </button>
+</view>
+
+
+
+</view>

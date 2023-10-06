@@ -1,0 +1,94 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="container">
+
+  <view class="header" bind:tap="gotoLogin">
+    <image src="../../assets/images/user-header.jpg"></image>
+    <view class="user-avatar">
+      <van-image round fit="cover" width="50px" height="50px" src="/assets/images/non_avatar.jpg" />
+
+      <view class="loginDesc">
+        <view>未登录</view>
+        <view>点击登录账号</view>
+      </view>
+    </view>
+  </view>
+  <view class="center">
+    <view class="middle">
+      <view class="my-wallet" bind:tap="walletClick">
+        <view class="mybalance">
+          <van-icon name="pending-payment" size="14px" /> <span>我的账户</span>
+        </view>
+        <view class="chargehistory">
+          <span>充电记录</span>
+          <van-icon name="arrow" size="14px" />
+        </view>
+      </view>
+    </view>
+
+    <view class="balance" bind:tap="balanceClick">
+      <text>0.0</text>
+      <view class="balance-title">余额（元）</view>
+    </view>
+  </view>
+
+
+  <view class="notice"></view>
+
+
+  <view class="bottom">
+    <button class="row" style="width: 100%;" bindtap="collectClick">
+      <view class="left">
+        <iconfont name="collect" />
+        <span>我的收藏</span>
+        <van-icon class="right" name="arrow" />
+      </view>
+    </button>
+
+    <button class="row" style="width: 100%;" bindtap="depositClick">
+      <view class="left">
+        <iconfont name="deposit" />
+        <span>账户充值</span>
+        <van-icon class="right" name="arrow" />
+      </view>
+    </button>
+
+    <button class="row" style="width: 100%;" bind:tap="showPopup">
+      <view class="left">
+        <iconfont name="service" />
+        <span>联系客服</span>
+        <van-icon class="right" name="arrow" />
+      </view>
+    </button>
+    <!--popup弹窗-->
+  
+    <van-popup show="{{showPopup}}" catch:close="hidePopup">
+        <view style="font-size: 20px; font-weight: bold; margin-top: 20px">
+            温馨提示
+        </view>
+        <view style="margin-top: 20px;font-size: 18px;">
+            <span>客服微信：</span>
+            <span>{{wechat}}</span>
+        </view>
+        <button class="row" style="width: 100%;border-top: 1px solid #f1f1f1; display: flex; align-items: center; font-size:18px;justify-content: center; color:rgba(46, 78, 126,1);" catchtap='copyText'>
+            <span style="align-items:center">复制</span>
+        </button>
+    </van-popup>
+
+
+    <button class="row" style="width: 100%;" bindtap="setClick">
+      <view class="left">
+        <iconfont name="setting" />
+        <span>我的设置</span>
+        <van-icon class="right" name="arrow" />
+      </view>
+    </button>
+
+    <van-button size="large" class="van-bt" type="primary" color="linear-gradient(to right, #4bb0ff, #6149f6)" block>
+      <view class="icon-mt">
+        <iconfont name="close" />
+        <span>退出登录</span>
+      </view>
+    </van-button>
+  </view>
+</view>

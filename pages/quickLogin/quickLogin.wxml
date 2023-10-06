@@ -1,0 +1,3 @@
+<!--pages/quickLogin/quickLogin.wxml-->
+<navigation-bar back="{{true}}" color="black" background="#fff"></navigation-bar>
+<text>pages/quickLogin/quickLogin.wxml</text>

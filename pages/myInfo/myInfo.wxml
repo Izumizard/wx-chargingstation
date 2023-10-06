@@ -1,0 +1,9 @@
+<!--pages/myInfo/myInfo.wxml-->
+<view class="container">
+<view style="height:85px;padding-top:20px;" class="cu-bar fixed bg-gradual-blue">
+  <view bindtap="BackPage" class="action">
+    <text class="cuIcon-back"></text>
+    <view>返回</view>
+  </view>
+</view>
+</view>

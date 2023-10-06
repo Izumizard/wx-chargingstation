@@ -1,0 +1,53 @@
+/* pages/mySetting/mySetting.wxss */
+.container{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color:rgba(248, 248, 248, 0.6);
+}
+.middle{
+  margin: auto;
+  padding: 20rpx 10rpx;
+  margin-top: 105px;
+  width: 94%;
+  color:rgba(0, 0, 0, 1) ;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, .1);
+}
+.left{
+  width: 90%;
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(59, 59, 59);
+}
+.left span{
+  margin-left:10px;
+}
+.right {
+  margin-left: auto;
+  margin-right: 10rpx;
+  color: rgb(148, 147, 147);
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 10rpx;
+  font-size: 30rpx;
+  font-weight: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.row::after {
+  border: none;
+}
+.van-bt{
+  border-radius: 20rpx;
+  margin-top:20rpx;
+}
